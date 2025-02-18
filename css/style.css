@@ -430,72 +430,27 @@
 
 /*** Carousel End ***/
 
-
-/*** About Start ***/
-.about .about-item-content-img {
-    border: 4px solid;
-    border-color: var(--bs-secondary) var(--bs-primary) var(--bs-primary) var(--bs-secondary);
-}
-
 .about .about-item-image {
     position: relative;
-    background: var(--bs-light);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 1;
+    background: #002147; /* Dark Blue Frame */
+    padding: 10px; /* Creates spacing around the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Hides overflow */
+    width: 500px; /* Sets a fixed width */
+    height: 500px; /* Sets a fixed height */
+    margin: auto; /* Centers the frame */
+    border-radius: 10px; /* Smooth rounded corners */
 }
 
-.about .about-item-image .img-1 {
-    margin-bottom: 250px; 
-    margin-right: 0;
-    border: 4px solid;
-    border-color: var(--bs-secondary) var(--bs-light) var(--bs-light) var(--bs-secondary);
-    z-index: 3;
+.about .about-item-image img {
+    width: 100%; /* Makes sure the image fills the container */
+    height: 100%; /* Prevents the image from exceeding the container */
+    object-fit: cover; /* Ensures the image fits without stretching */
+    border-radius: 5px; /* Slightly rounds the image corners */
 }
 
-.about .about-item-image .img-2 {
-    margin-top: 250px; 
-    margin-left: 0;
-    border: 4px solid;
-    border-color: var(--bs-light) var(--bs-secondary) var(--bs-secondary) var(--bs-light); 
-    z-index: 3;
-}
-
-.about .about-item-image::before {
-    width: 80%;
-    height: 80%;
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 2px solid;
-    border-style: dotted;
-    border-color: var(--bs-white);
-    background: var(--bs-primary);
-    z-index: 2;
-}
-
-.about .about-item-image .about-item-image-content {
-    width: 55%;
-    height: 55%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: var(--bs-secondary);
-    border: 4px solid var(--bs-primary);
-    opacity: 0.9;
-    z-index: 4;
-}
-
-.about .about-item-image .about-item-image-effect {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-/*** About End ***/
 
 /*** Features Start ***/
 .feature .feature-item {
